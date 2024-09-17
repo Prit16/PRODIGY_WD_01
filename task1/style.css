@@ -1,0 +1,79 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Style for the navigation bar */
+  .navbar {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Scroll-based navbar background color change */
+  .scrolled {
+    background-color: #222;
+  }
+  
+  /* Landing section styles */
+  section {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  #home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+  }
+  
+  #about, #services, #contact {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+  
